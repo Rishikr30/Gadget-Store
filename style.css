@@ -71,7 +71,7 @@ nav ul li a:hover{
     position: relative;
     font-size: 1.2rem;
 }
-
+/* 
 .cart-icon span{
     position: absolute;
     top: -10px;
@@ -82,6 +82,7 @@ nav ul li a:hover{
     padding: 0.2rem 0.5rem;
     font-size: 0.8rem;
 }
+*/
 
 /* hero section */
 
@@ -195,5 +196,137 @@ footer{
     }
     .hero h2 {
         font-size: 2rem;
+    }
+}
+
+
+/* Products Section */
+.products {
+    padding: 2rem;
+    background: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.products-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.filters {
+    flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.filters ul {
+    list-style: none;
+}
+
+.filters ul li {
+    margin-bottom: 0.5rem;
+}
+
+.filters ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.filters ul li a:hover {
+    color: #e91e63;
+}
+
+.product-grid {
+    flex: 3;
+}
+
+/* Responsive Design for Products */
+@media (max-width: 768px) {
+    .products-content {
+        flex-direction: column;
+    }
+
+    .filters {
+        text-align: center;
+    }
+
+    .filters ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+
+/* Product Details */
+.product-details {
+    padding: 2rem;
+    background: #fff;
+}
+
+.product-details-content {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-info h2 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 1rem;
+}
+
+.product-info .price {
+    font-size: 1.5rem;
+    color: #e91e63;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.product-info .description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Responsive Design for Product Details */
+@media (max-width: 768px) {
+    .product-details-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info {
+        padding: 0 1rem;
     }
 }
