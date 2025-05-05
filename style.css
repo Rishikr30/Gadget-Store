@@ -242,7 +242,7 @@ footer{
 }
 
 .filters ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
 }
 
 .filters ul li a {
@@ -271,8 +271,12 @@ footer{
 
     .filters ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+    }
+    .filters ul li {
+        margin-bottom: 0;
     }
 }
 
